@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-export const UsuarioSchema = Schema({
+const usuarioSchema = Schema({
   name: {
     type: String,
     require: true,
@@ -15,3 +15,7 @@ export const UsuarioSchema = Schema({
     require: true,
   },
 });
+
+
+// Crea y exporta el modelo basado en el esquema
+export const Usuario = model('Usuario', usuarioSchema);
