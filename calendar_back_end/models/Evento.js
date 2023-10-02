@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 const EventoSchema = Schema({
-
+//hice un cambio 
     title: {
         type: String,
         required: true
