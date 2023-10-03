@@ -4,9 +4,9 @@ import { authSlice } from './auth/authSlice' //*? si lo subo me manda error no s
 
 export const store = configureStore({
   reducer:{
-    auth: authSlice,
     ui: uiSlice.reducer,
     calendar: calendarSlice.reducer,
+    auth: authSlice.reducer,
   },
   middleware:(getDefaultMiddleware) => getDefaultMiddleware({
     serializableCheck: false
