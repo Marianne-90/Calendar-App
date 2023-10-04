@@ -1,1 +1,1 @@
-export * as calendarAPI from "./calendarApi"
+export {default as calendarApi} from "./calendarApi"
